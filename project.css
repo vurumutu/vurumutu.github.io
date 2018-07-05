@@ -2,10 +2,7 @@ body {
 	font-family: Verdana, Geneva, sans-serif;
 	background-color: CornflowerBlue;
 } 
-h1 {
-	text-align: center;
-}
-h2 {
+h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 .wrapper {
@@ -20,14 +17,15 @@ h2 {
 	grid-column-start: 1; 
 	grid-column-end: 4; 
 }
-.projectbox {
-	background-color: yellow;
-}
-.projectbox:hover {
-	background-color: red;
+.contentbox{
+	grid-row: 2;
+	grid-column-start: 1; 
+	grid-column-end: 4; 
 }
 .footer {
 	grid-row: 4;
 	grid-column-start: 1; 
 	grid-column-end: 4; 
+	margin-left: auto;
+	margin-right: auto;
 }
