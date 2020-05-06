@@ -1,71 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
 <head>
 	<title>Vurumutu - homepage</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="wholesite_css.css" />
 	<link rel="stylesheet" type="text/css" href="mainpage.css" />
 </head>
 <body>
-	<div class="wrapper">
-		<div class="header">
-			<h1>Welcome to my homepage!</h1>
-			<h2>Page under construction</h2>
-		</div>
-		<div class="projectbox">			
-			<a href="PKM.html">
-				<img src="images/thumbnails/PKM.jpg" />
-				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
-			</a>
-			<div class="caption">
-				<h2>PKM</h2>
+	<nav class="sidebar">
+		<ul>
+			<li><a class="menubutton active" href="#about">About me</a></li>
+			<li><a class="menubutton" href="#projects">Projects</a></li>
+			<li><a class="menubutton" href="#articles">Articles</a></li>
+		</ul>
+		<script src="js/active_button.js"></script>
+		<script src="js/id_scroll.js"></script>
+	</nav>
+	<div class="content">
+		<section id="about">	
+			<h1>About me</h1>
+			<div class="leftcontainer">
+				<img class="mainphoto" src = "images/linkedinphoto.jpg" alt="My photo."/>
+				<h2>My name is Wojciech Zgliniecki. I am a student of Automatics and Robotics (Master's degree) and Economics (Bachelor of Science), both at Gdańsk University of Technology. My interests include mathematics, ecology, economics, foreign languages, music and artificial intelligence. I hope that thanks to this site I can share my knowledge and interests with others.</h2>
+				<h3>Find me here:</h3>
+				<ul>
+					<li>
+						<a href="https://github.com/vurumutu">
+						<!-- Neil Hansworth -->
+							<img src = "images/logos/github.png" alt="My GitHub account." />
+						</a>
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/wojciech-zgliniecki-1279a1166">
+						<!-- Neil Hansworth -->
+							<img src = "images/logos/linkedin.png" alt="My LinkedIn account." />
+						</a>
+					</li>
+				</ul>
 			</div>
-		</div>
-		<div class="projectbox">
-			<a href="SIMP.html">
-				<img src = "images/thumbnails/SIMP.jpg" />
-				<!-- https://www.pexels.com/photo/apple-business-computer-connection-392018/ -->
-			</a>
-			<div class="caption">
-				<h2>SIMP</h2>
+
+			<div class="rightcontainer">
+				<!-- Languages  -->	
+				<div class="language_box">
+					<p>Polish</p>
+
+					<div class="language tooltip">
+						<span class="tooltiptext">Native speaker.</span>
+						<div class="language_bar filled"></div>
+						<div class="language_bar filled"></div>
+						<div class="language_bar filled"></div>
+						<div class="language_bar filled"></div>
+						<div class="language_bar filled"></div>
+					</div>
+					<p>English</p>
+					<div class="language tooltip">
+						<span class="tooltiptext">Lifelong learner. I'm on my way to obtain the ACERT certificate.</span>
+						<div class="language_bar filled"></div>
+						<div class="language_bar filled"></div>
+						<div class="language_bar filled"></div>
+						<div class="language_bar filled"></div>
+						<div class="language_bar"></div>
+					</div>
+					<p>German</p>
+					<div class="language tooltip">
+						<span class="tooltiptext">I studied German for 10 years. Currently it is very rusty.</span>
+						<div class="language_bar filled"></div>
+						<div class="language_bar"></div>
+						<div class="language_bar"></div>
+						<div class="language_bar"></div>
+						<div class="language_bar"></div>
+					</div>
+				</div>
+				<!-- Skills  -->
+				<p>Python 3</p>
+				<div class="containerskills tooltip">
+					<span class="tooltiptext">My go-to tool. The language that taught me programming.</span>
+					<div class="skills skill" style="--width: 50%;">50%</div>
+				</div>
+				<p>HTML/CSS/JS</p>
+				<div class="containerskills tooltip">
+					<span class="tooltiptext">I have basic programming knowledge regarding those technologies. This website was written from scratch by me.</span>
+					<div class="skills skill" style="--width: 50%;">50%</div>
+				</div>
+				<p>C++</p>
+				<div class="containerskills tooltip">
+					<span class="tooltiptext">My first programming language</span>
+					<div class="skills skill" style="--width: 20%;">20%</div>
+				</div>
+				<p>Django</p>
+				<div class="containerskills tooltip">
+					<span class="tooltiptext">My favourite web framework. I've done a few small projects in this technology.</span>
+					<div class="skills skill" style="--width: 50%;">50%</div>
+				</div>
+				<p>AI/ML</p>
+				<div class="containerskills tooltip">
+					<span class="tooltiptext">A beginner, but I have used Neural Networks in my Engineering Thesis.</span>
+					<div class="skills skill" style="--width: 20%;">20%</div>
+				</div>
+				
 			</div>
-		</div>
-		<div class="projectbox">
-			<a href="houses.html">
-				<img src = "images/thumbnails/houses.jpg" />
-				<!-- https://www.pexels.com/photo/aerial-view-architecture-autumn-cars-280221/ -->
-			</a>
-			<div class="caption">
-				<h2>Houses</h2>
+
+		</section>
+		<section class="wrapper" id="projects">
+			<div class="projectbox">			
+				<a href="projects/pkm.html">
+					<img src="images/thumbnails/PKM.jpg" alt="PKM" />
+					<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
+				<div class="caption">
+					<h2>PKM</h2>
+				</div>
+				</a>
 			</div>
-		</div>
-		<div class="projectbox">
-			<img src = "images/thumbnails/gameengine.jpg" />
-			<!-- https://www.pexels.com/photo/abstract-business-code-coder-270348/ -->
-			<div class="caption">
-				<h2>TBA</h2>
+			<div class="projectbox">
+				<a href="projects/simp.html">
+					<img src = "images/thumbnails/SIMP.jpg" alt="SIMP"/>
+					<!-- https://www.pexels.com/photo/apple-business-computer-connection-392018/ -->
+				<div class="caption">
+					<h2>SIMP</h2>
+				</div>
+				</a>
 			</div>
-		</div>
-		<div class="projectbox">
-			<img src = "images/thumbnails/anfis.jpg" />
-			<!-- https://www.pexels.com/photo/black-click-pen-on-white-paper-167682/ -->
-			<div class="caption">
-				<h2>TBA</h2>
+			<div class="projectbox">
+				<a href="projects/redigg.html">
+					<img src = "images/thumbnails/houses.jpg" alt="redigg"/>
+					<!-- https://www.pexels.com/photo/aerial-view-architecture-autumn-cars-280221/ -->
+				<div class="caption">
+					<h2>REDIGG</h2>
+				</div>
+				</a>
 			</div>
-		</div>
-		<div class="projectbox">
-			<img src = "images/thumbnails/music.jpg" />
-			<!-- https://www.pexels.com/photo/printed-musical-note-page-164821/ -->
-			<div class="caption">
-				<h2>TBA</h2>
+			<div class="projectbox">
+				<a href="projects/gameengine.html">
+				<img src = "images/thumbnails/gameengine.jpg" alt="gameengine"/>
+				<!-- https://www.pexels.com/photo/abstract-business-code-coder-270348/ -->
+				<div class="caption">
+					<h2>GAME ENGINE</h2>
+				</div>
+				</a>
 			</div>
-		</div>
-		<div class="footer">	
-			<a href="https://github.com/vurumutu">
-				<img src = "images/logos/github.png" alt="My GitHub account" />
-			</a>
-			<a href="https://linkedin.com">
-				<img src = "images/logos/linkedin.png" alt="My LinkedIn account" />
-			</a>
-		</div>
+			<div class="projectbox">
+				<a href="projects/anfis.html">
+				<img src = "images/thumbnails/anfis.jpg" alt="ANFIS"/>
+				<!-- https://www.pexels.com/photo/black-click-pen-on-white-paper-167682/ -->
+				<div class="caption">
+					<h2>ANFIS</h2>
+				</div>
+				</a>
+			</div>
+			<div class="projectbox">
+				<a href="projects/mpeg7.html">
+				<img src = "images/thumbnails/music.jpg" alt="MPEG7"/>
+				<!-- https://www.pexels.com/photo/printed-musical-note-page-164821/ -->
+				<div class="caption">
+					<h2>MPEG-7</h2>
+				</div>
+				</a>
+			</div>
+		</section>
+		<section id="articles" class="articles">
+			<h1>Articles that I have written:</h1>
+				<ul>
+					<li>
+						<a href="articles/basic_economy_forecasting.html">
+							Basic economy forecasting techniques.
+						</a>
+					</li>
+					<li>
+						<a href="articles/mpeg7.html">
+							MPEG-7 sound descriptors explained.
+						</a>
+					</li>
+					<li>
+						<a href="articles/anfis_python.html">
+							Anfis in Python 3 with examples.
+						</a>
+					</li>
+				</ul>		
+		</section>
 	</div>
 </body>
 </html>
