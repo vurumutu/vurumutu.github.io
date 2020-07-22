@@ -1,33 +1,50 @@
+body {
+	margin:0;
+}
+
 /* Sidebar stuff */
-.sidebar ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 15%;
   position: fixed;
-  height: 100%;
-  overflow: auto;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #86948C;
+  /* TODO? */
+  z-index:1000;
 }
 
-.sidebar li a {
+.navbar li {
+	float: left;
+	width:25%;
+}
+
+.navbar li a {
 	display: block;
 	padding: 8px 16px;
 	text-decoration: none;
 }
 
-.sidebar li a.active {
-  background-color: #66b3ff;
+.navbar li a.active {
+  background-color: #313431;
   color: white;
 }
 
-.sidebar li a:hover:not(.active) {
-  background-color: #262626;
+.navbar li a:hover:not(.active) {
+  background-color: #407190;
   color: white;
+}
+
+.anchor { 
+	padding-top: 3%; 
 }
 
 /* Main page */
 .content{
-	margin-left:17%;
+	margin-left:5%;
+	margin-right:5%;
 }
 
 section {
@@ -35,9 +52,8 @@ section {
 	box-sizing: border-box;
 }
 
-.leftcontainer{
-	width: 50%;
-	float:left;
+.about{
+
 }
 
 .mainphoto{
@@ -49,18 +65,25 @@ section {
 	filter: grayscale(100%);
 }
 
-.leftcontainer ul{
+.about ul{
 	list-style-type: none;
 	/* TODO */
 	margin-left:30%
 }
 
-.leftcontainer ul li {
+.about ul li {
     display: block;
     position: relative;
     float: left;
 }
 
+
+.leftcontainer{
+	width: 50%;
+	float:left;
+	text-align: center;
+
+}
 .rightcontainer{
 	width: 50%;
 	float: right;
@@ -69,8 +92,8 @@ section {
 
 /* Container for skill bars */
 .containerskills {
-  width: 70%;
-  background-color: #ddd; /* Grey background */
+  width: 50%;
+  background-color: #86948C;
   margin: 0 auto;
 }
 
@@ -83,7 +106,7 @@ section {
 
 .skill {
 width: var(--width);
-background-color: #4CAF50;
+background-color: #DC963F;
 }
 
 /* Container for language bars */
@@ -103,11 +126,11 @@ background-color: #4CAF50;
 	width: 50px;
 	height: 30px;
 	transform: skew(20deg);
-	background-color: #F0F8FF;
+	background-color: #86948C;
 
 }
 .filled{
-	background-color: #66b3ff;
+	background-color: #407190;
 }
 /* Text bubbles */
 .tooltip {

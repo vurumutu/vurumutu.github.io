@@ -7,9 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="mainpage.css" />
 </head>
 <body>
-	<nav class="sidebar">
+	<nav class="navbar">
 		<ul>
 			<li><a class="menubutton active" href="#about">About me</a></li>
+			<li><a class="menubutton" href="#skills">Skills</a></li>
 			<li><a class="menubutton" href="#projects">Projects</a></li>
 			<li><a class="menubutton" href="#articles">Articles</a></li>
 		</ul>
@@ -17,9 +18,9 @@
 		<script src="js/id_scroll.js"></script>
 	</nav>
 	<div class="content">
-		<section id="about">	
+		<section id="about" class="anchor">	
+			<div class="about">
 			<h1>About me</h1>
-			<div class="leftcontainer">
 				<img class="mainphoto" src = "images/linkedinphoto.jpg" alt="My photo."/>
 				<h2>My name is Wojciech Zgliniecki. I am a student of Automatics and Robotics (Master's degree) and Economics (Bachelor of Science), both at Gdańsk University of Technology. My interests include mathematics, ecology, economics, foreign languages, music and artificial intelligence. I hope that thanks to this site I can share my knowledge and interests with others.</h2>
 				<h3>Find me here:</h3>
@@ -39,7 +40,10 @@
 				</ul>
 			</div>
 
-			<div class="rightcontainer">
+			
+		</section>
+		<section id="skills" class="anchor">
+			<div class="leftcontainer">
 				<!-- Languages  -->	
 				<div class="language_box">
 					<p>Polish</p>
@@ -71,6 +75,8 @@
 						<div class="language_bar"></div>
 					</div>
 				</div>
+			</div>
+			<div class="rightcontainer"
 				<!-- Skills  -->
 				<p>Python 3</p>
 				<div class="containerskills tooltip">
@@ -101,7 +107,7 @@
 			</div>
 
 		</section>
-		<section class="wrapper" id="projects">
+		<section class="wrapper anchor" id="projects">
 			<div class="projectbox">			
 				<a href="projects/pkm.html">
 					<img src="images/thumbnails/PKM.jpg" alt="PKM" />
@@ -157,7 +163,7 @@
 				</a>
 			</div>
 		</section>
-		<section id="articles" class="articles">
+		<section id="articles" class="articles anchor">
 			<h1>Articles that I have written:</h1>
 				<ul>
 					<li>
