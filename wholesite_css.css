@@ -1,23 +1,18 @@
-@font-face {
-  font-family: 'ArchivoNarrow-Bold';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('ArchivoNarrow-Bold.ttf')  format('truetype');
-}
 html, body {
-	font-family: ArchivoNarrow-Bold, sans-serif;
-	/*background-color: #ffd9b3;*/
-	/*background-color: #ffcc66;*/
+	font-family: Lato, sans-serif;
 	background-color: #ffd9b3;
 	scroll-behavior: smooth;
 } 
 h1, h2, h3, h4, h5, h6{
 	text-align: center;
-	color: white;
-	/* text-shadow: 2px 1px black;*/
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	color: black;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	font-size: 30px;
 }
 p, a{
-	color: white;
-	/* text-shadow: 2px 1px black;*/
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	color: black;
 }

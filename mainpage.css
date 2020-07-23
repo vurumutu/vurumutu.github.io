@@ -11,10 +11,12 @@ body {
   top: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #86948C;
+  background-color: #673AB7;
   /* TODO? */
   z-index:1000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+
 
 .navbar li {
 	float: left;
@@ -49,49 +51,57 @@ body {
 
 section {
 	height:100vh;
-	box-sizing: border-box;
+	box-sizing: content-box;
+
 }
 
 .about{
-
+	margin-left:10%;
+	margin-right:10%;
 }
 
 .mainphoto{
-	float:left;  
 	max-width: 100%; 
 	width: auto; 
 	height: auto;   
 	border-radius: 50%;  
-	filter: grayscale(100%);
 }
 
-.about ul{
-	list-style-type: none;
-	/* TODO */
-	margin-left:30%
+.links{
+	width:100%;
+	text-align:center;
 }
 
-.about ul li {
-    display: block;
-    position: relative;
-    float: left;
+.links a{
+	padding-left: 5%;
+	padding-right: 5%;
 }
-
 
 .leftcontainer{
-	width: 50%;
+	width: var(--width);
 	float:left;
 	text-align: center;
-
 }
 .rightcontainer{
-	width: 50%;
+	width: var(--width);
 	float: right;
 	text-align: center;
 }
 
+/* Container for language bars */
+.card{
+	background: #FFE082;
+	border-radius: 2px;
+	display: inline-block;
+	height: 80%;
+	margin-top: 1rem;
+	padding-bottom: 10%;
+	width: 80%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 /* Container for skill bars */
-.containerskills {
+.skills_box {
   width: 50%;
   background-color: #86948C;
   margin: 0 auto;
@@ -104,34 +114,12 @@ section {
   color: white;
 }
 
-.skill {
+.skill_filled {
 width: var(--width);
 background-color: #DC963F;
 }
 
-/* Container for language bars */
-.language_box{
-	width: 50%;
-	margin: 0 auto;
-}
 
-.language {
-	display: grid;
-	grid-template-columns: repeat(5, 0.1fr);
-	column-gap: 5px;
-	margin: 0 auto;
-}
-
-.language_bar{
-	width: 50px;
-	height: 30px;
-	transform: skew(20deg);
-	background-color: #86948C;
-
-}
-.filled{
-	background-color: #407190;
-}
 /* Text bubbles */
 .tooltip {
   position: relative;
@@ -175,18 +163,12 @@ background-color: #DC963F;
 }
 .projectbox img {
 	width: 100%;
-	height: 100%;
-	filter: blur(5px) grayscale(1);
+	height: 80%;
+	filter: grayscale(1);
 }
 .projectbox:hover img{
-	filter: blur(0px) grayscale(0);
+	filter: grayscale(0);
 }
-.projectbox .caption{
-    position: absolute; 
-    bottom: 0; 
-    width: 100%;
-	font-size:200%;
-} 	
 .content a{
 	text-align:center;
 }
@@ -195,10 +177,10 @@ background-color: #DC963F;
 
 .articles{
 	font-size:200%;
-	
 }
 .articles ul{
 	list-style:upper-roman;
+	text-align: left;
 }
 .articles ul li{
 	font-size:40px;
