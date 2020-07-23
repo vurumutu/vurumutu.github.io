@@ -11,7 +11,7 @@ body {
   top: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #673AB7;
+  background-color: #1486ED;
   /* TODO? */
   z-index:1000;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -30,12 +30,12 @@ body {
 }
 
 .navbar li a.active {
-  background-color: #313431;
+  background-color: #1966CB;
   color: white;
 }
 
 .navbar li a:hover:not(.active) {
-  background-color: #407190;
+  background-color: #56A9F5;
   color: white;
 }
 
@@ -90,7 +90,7 @@ section {
 
 /* Container for language bars */
 .card{
-	background: #FFE082;
+	background: #FFC081;
 	border-radius: 2px;
 	display: inline-block;
 	height: 80%;
@@ -103,7 +103,7 @@ section {
 /* Container for skill bars */
 .skills_box {
   width: 50%;
-  background-color: #86948C;
+  background-color: #ffD9B3;
   margin: 0 auto;
 }
 
@@ -116,7 +116,7 @@ section {
 
 .skill_filled {
 width: var(--width);
-background-color: #DC963F;
+background-color: #1486ED;
 }
 
 
@@ -177,10 +177,12 @@ background-color: #DC963F;
 
 .articles{
 	font-size:200%;
+	margin-left:10%;
+	margin-right:10%;
 }
 .articles ul{
 	list-style:upper-roman;
-	text-align: left;
+	text-align: center;
 }
 .articles ul li{
 	font-size:40px;
