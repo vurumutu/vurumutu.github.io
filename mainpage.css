@@ -2,79 +2,74 @@ body {
 	margin:0;
 }
 
-/* Sidebar stuff */
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  background-color: #1486ED;
-  /* TODO? */
-  z-index:1000;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+/* Header stuff */
+.site-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+	position: fixed;
+	width: 100%;
+	background-color: #FFC081;
+	z-index:1000;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.24);
 }
 
-
-.navbar li {
-	float: left;
-	width:25%;
+.site-header img{
+	max-width: 5%;
+	max-height: : 5%; 
+	border-radius: 25%;  
 }
 
-.navbar li a {
-	display: block;
-	padding: 8px 16px;
+.site-header ul {
+	list-style-type: none;
+	display: flex; 
+	flex-wrap: wrap;    
+	justify-content: space-around;
+    align-items: stretch;
+    margin:0;
+}
+
+.site-header ul li {
+	display: flex;
+}
+
+.site-header li a {
 	text-decoration: none;
 }
 
-.navbar li a.active {
-  background-color: #1966CB;
+.site-header li a.active {
+  background-color: #ffA650;
   color: white;
 }
 
-.navbar li a:hover:not(.active) {
-  background-color: #56A9F5;
+.site-header li a:hover:not(.active) {
+  background-color: #ffD9B3;
   color: white;
 }
 
 .anchor { 
-	padding-top: 3%; 
+	padding-top: 5%; 
 }
 
 /* Main page */
 .content{
-	margin-left:5%;
-	margin-right:5%;
+
 }
 
 section {
+		margin-left:5%;
+	margin-right:5%;
 	height:100vh;
 	box-sizing: content-box;
-
 }
 
 .about{
 	margin-left:10%;
 	margin-right:10%;
 }
-
-.mainphoto{
-	max-width: 100%; 
-	width: auto; 
-	height: auto;   
-	border-radius: 50%;  
-}
-
-.links{
-	width:100%;
-	text-align:center;
-}
-
-.links a{
-	padding-left: 5%;
-	padding-right: 5%;
+.about p{
+	font-size: 30px;
 }
 
 .leftcontainer{
@@ -88,17 +83,6 @@ section {
 	text-align: center;
 }
 
-/* Container for language bars */
-.card{
-	background: #FFC081;
-	border-radius: 2px;
-	display: inline-block;
-	height: 80%;
-	margin-top: 1rem;
-	padding-bottom: 10%;
-	width: 80%;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
 
 /* Container for skill bars */
 .skills_box {
@@ -116,7 +100,7 @@ section {
 
 .skill_filled {
 width: var(--width);
-background-color: #1486ED;
+background-color: #ffA650;
 }
 
 
@@ -145,28 +129,32 @@ background-color: #1486ED;
   visibility: visible;
 }
 
-/* Projectboxes*/
+/* Projects*/
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-auto-rows: minmax(150px, auto);
-	column-gap: 10px;
-	row-gap: 1em;
-	padding: 5%;
-
+	gap: 10% 10% ;
+	padding:10%;
 }
-.projectbox {
-    position: relative;
-    max-width: 800px;
-	max-height: 800px;
-    margin: 0 auto; 
+.card{
+	display: flex;
+    flex-direction: column;
+    background: #FFC081;
+	border-radius: 2px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
 }
-.projectbox img {
-	width: 100%;
-	height: 80%;
+.card_caption{
+	flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card img {
+	max-width: 100%;
+	max-height: 80%; 
 	filter: grayscale(1);
 }
-.projectbox:hover img{
+.card:hover img{
 	filter: grayscale(0);
 }
 .content a{
