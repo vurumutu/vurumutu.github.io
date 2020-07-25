@@ -12,7 +12,6 @@
 		<h3>Wojciech's Blog - Technology, Economics and more.</h3>
 			<ul>
 				<li><a class="menubutton active" href="#about">About me</a></li>
-				<li><a class="menubutton" href="#skills">Skills</a></li>
 				<li><a class="menubutton" href="#projects">Projects</a></li>
 				<li><a class="menubutton" href="#articles">Articles</a></li>
 				<li><a class="menubutton" href="https://github.com/vurumutu">My GitHub</a></li>
@@ -21,71 +20,57 @@
 	 		<script src="js/active_button.js"></script>
 	</nav>
 	<div class="content">
-		<section id="about" class="anchor">	
-			<div class="about">
-			<h1>About me</h1>
-				<p>My name is Wojciech Zgliniecki. </br> I am a student of Automatics and Robotics (Master's degree) and Economics (Bachelor of Science), both at Gdańsk University of Technology. </wbr> My interests include mathematics, ecology, economics, foreign languages, music and artificial intelligence.</wbr>  I hope that thanks to this site I can share my knowledge and interests with others.</p>
-				</div>
+		<section id="about" class="anchor about">	
+			<div class="about-text">
+				<h1>About me</h1>
+				<p>My name is Wojciech Zgliniecki. </br> I am a student of Automatics and Robotics (Master's degree) and Economics (Bachelor of Science), both at Gdańsk University of Technology. </wbr> My interests include mathematics, ecology, economics, foreign languages, music and artificial intelligence.</wbr> I hope that thanks to this site I can share my knowledge and interests with others.</p>
 			</div>
-		</section>
-		<section id="skills" class="anchor">
-			<div class="leftcontainer" style="--width: 50%;">  
-				<!-- Languages  -->	
-				<div>
+			<div class="languages">  
 					<h1>Languages:</h1>
 					<p>Polish</p>
-					<div class="skills_box tooltip">
+					<div class="skill-bar tooltip">
 						<span class="tooltiptext">Native speaker.</span>
-						<div class="skills skill_filled" style="--width: 100%;">100%</div>
+						<div class="skill-bar-caption skill-bar-filled" style="--width: 100%;">100%</div>
 					</div>
 					<p>English</p>
-					<div class="skills_box tooltip">
+					<div class="skill-bar tooltip">
 						<span class="tooltiptext">Lifelong learner. I'm on my way to obtain the ACERT certificate.</span>						
-						<div class="skills skill_filled" style="--width: 80%;">80%</div>
+						<div class="skill-bar-caption skill-bar-filled" style="--width: 80%;">80%</div>
 					</div>
 					<p>German</p>
-					<div class="skills_box tooltip">
+					<div class="skill-bar tooltip">
 						<span class="tooltiptext">I studied German for 10 years. Currently it is very rusty.</span>
-						<div class="skills skill_filled" style="--width: 20%;">20%</div>
+						<div class="skill-bar-caption skill-bar-filled" style="--width: 20%;">20%</div>
 					</div>
-
-				</div>
 			</div>
-			<div class="rightcontainer" style="--width: 50%;">
-				<!-- Skills  -->
-				<div>
-					<h1>Technologies:</h1>
-					<p>Python 3</p>
-					<div class="skills_box tooltip">
-						<span class="tooltiptext">My go-to tool. The language that taught me programming.</span>
-						<div class="skills skill_filled" style="--width: 50%;">50%</div>
-					</div>
-					<p>HTML/CSS/JS</p>
-					<div class="skills_box tooltip">
-						<span class="tooltiptext">I have basic programming knowledge regarding those technologies. This website was written from scratch by me.</span>
-						<div class="skills skill_filled" style="--width: 50%;">50%</div>
-					</div>
-					<p>C++</p>
-					<div class="skills_box tooltip">
-						<span class="tooltiptext">My first programming language</span>
-						<div class="skills skill_filled" style="--width: 20%;">20%</div>
-					</div>
-					<!--
-					<p>Django</p>
-					<div class="skills_box tooltip">
-						<span class="tooltiptext">My favourite web framework. I've done a few small projects in this technology.</span>
-						<div class="skills skill_filled" style="--width: 50%;">50%</div>
-					</div>
-					<p>AI/ML</p>
-					<div class="skills_box tooltip">
-						<span class="tooltiptext">A beginner, but I have used Neural Networks in my Engineering Thesis.</span>
-						<div class="skills skill_filled" style="--width: 20%;">20%</div>
-					</div>
-					-->
+			<div class="skills">
+				<h1>Technologies:</h1>
+				<p>Python 3</p>
+				<div class="skill-bar tooltip">
+					<span class="tooltiptext">My go-to tool. The language that taught me programming.</span>
+					<div class="skill-bar-caption skill-bar-filled" style="--width: 50%;">50%</div>
 				</div>
-				
-			</div>
-
+				<p>HTML/CSS/JS</p>
+				<div class="skill-bar tooltip">
+					<span class="tooltiptext">I have basic programming knowledge regarding those technologies. This website was written from scratch by me.</span>
+					<div class="skill-bar-caption skill-bar-filled" style="--width: 50%;">50%</div>
+				</div>
+				<p>C++</p>
+				<div class="skill-bar tooltip">
+					<span class="tooltiptext">My first programming language</span>
+					<div class="skill-bar-caption skill-bar-filled" style="--width: 20%;">20%</div>
+				</div>
+				<p>Django</p>
+				<div class="skill-bar tooltip">
+					<span class="tooltiptext">My favourite web framework. I've done a few small projects in this technology.</span>
+					<div class="skill-bar-caption skill-bar-filled" style="--width: 50%;">50%</div>
+				</div>
+				<p>AI/ML</p>
+				<div class="skill-bar tooltip">
+					<span class="tooltiptext">A beginner, but I have used Neural Networks in my Engineering Thesis.</span>
+					<div class="skill-bar-caption skill-bar-filled" style="--width: 20%;">20%</div>
+				</div>
+			</div>	
 		</section>
 		<section class="wrapper anchor" id="projects">
 			<article class="card">	
@@ -93,7 +78,7 @@
 				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
 				<div class="card_caption">	
 				<a href="projects/pkm.html">
-					<h2>PKM</h2>
+				<h2>PKM</h2>
 				</a>
 				</div>	
 			</article>
@@ -102,7 +87,7 @@
 				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
 				<div class="card_caption">	
 				<a href="projects/simp.html">
-									<h2>SIMP</h2>
+				<h2>SIMP</h2>
 				</a>
 				</div>	
 			</article>
@@ -111,7 +96,7 @@
 				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
 				<div class="card_caption">	
 				<a href="projects/pkm.html">
-					<h2>Redigg</h2>
+				<h2>Redigg</h2>
 				</a>
 				</div>	
 			</article>
@@ -120,7 +105,7 @@
 				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
 				<div class="card_caption">	
 				<a href="projects/pkm.html">
-					<h2>Game engine</h2>
+				<h2>Game engine</h2>
 				</a>
 				</div>	
 			</article>
@@ -129,7 +114,7 @@
 				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
 				<div class="card_caption">	
 				<a href="projects/pkm.html">
-					<h2>Anfis</h2>
+				<h2>Anfis</h2>
 				</a>
 				</div>	
 			</article>
@@ -138,7 +123,7 @@
 				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
 				<div class="card_caption">	
 				<a href="projects/pkm.html">
-					<h2>MPEG-7</h2>
+				<h2>MPEG-7</h2>
 				</a>
 				</div>	
 			</article>

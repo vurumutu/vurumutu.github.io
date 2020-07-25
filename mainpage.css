@@ -48,57 +48,65 @@ body {
   color: white;
 }
 
+/* Added padding for scrolling */
 .anchor { 
 	padding-top: 5%; 
 }
 
 /* Main page */
 .content{
-
+	display: flex;
+    flex-direction: column;
 }
 
 section {
-		margin-left:5%;
+	margin-left:5%;
 	margin-right:5%;
-	height:100vh;
 	box-sizing: content-box;
 }
 
 .about{
-	margin-left:10%;
-	margin-right:10%;
-}
-.about p{
-	font-size: 30px;
-}
-
-.leftcontainer{
-	width: var(--width);
-	float:left;
-	text-align: center;
-}
-.rightcontainer{
-	width: var(--width);
-	float: right;
-	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"about-text skills skills"
+		"languages skills skills";
 }
 
+.about-text {
+	grid-area: about-text;
+	text-align: center; 
+}
 
-/* Container for skill bars */
-.skills_box {
-  width: 50%;
-  background-color: #ffD9B3;
-  margin: 0 auto;
+.languages {
+	grid-area: languages;
+	text-align: center; 
 }
 
 .skills {
+	grid-area: skills;
+	text-align: center; 
+}
+
+.about-text p{
+}
+
+/* Container for skill bars */
+.skill-bar {
+  width: 50%;
+  background-color: #fff0E0;
+  margin: 0 auto;
+}
+
+.skill-bar-caption {
   text-align: center; 
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
 }
 
-.skill_filled {
+.skill-bar-filled  {
 width: var(--width);
 background-color: #ffA650;
 }
@@ -134,7 +142,7 @@ background-color: #ffA650;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-auto-rows: minmax(150px, auto);
-	gap: 10% 10% ;
+	gap: 10% 10%;
 	padding:10%;
 }
 .card{
