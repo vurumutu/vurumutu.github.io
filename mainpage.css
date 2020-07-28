@@ -64,7 +64,7 @@ section {
 /* Container for skill bars */
 .skill-bar {
 	width: 50%;
-	background-color: #fff0E0;
+	background-color: var(--quaternary-color);
 	margin: 0 auto;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
 }
@@ -73,12 +73,11 @@ section {
 	text-align: center; 
 	padding-top: 10px;
 	padding-bottom: 10px;
-	color: white;
 }
 
 .skill-bar-filled  {
 	width: var(--width);
-	background-color: #ffA650;
+	background-color: var(--tertiary-color);
 }
 
 
@@ -120,7 +119,7 @@ section {
 .card{
 	display: flex;
     flex-direction: column;
-    background: #FFC081;
+    background: var(--secondary-color);
 	border-radius: 2px;
     box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
 }
