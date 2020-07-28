@@ -3,45 +3,34 @@
 <head>
 	<title>Vurumutu - homepage</title>
 	<meta charset="UTF-8">
+	<meta name="color-scheme" content="dark light">
 	<link rel="stylesheet" type="text/css" href="wholesite_css.css" />
 	<link rel="stylesheet" type="text/css" href="mainpage.css" />
 </head>
 <body>
 	<nav class="site-header">
-		<img src = "images/photo.png" alt="My photo."/>
 		<h3>Wojciech's Blog - Technology, Economics and more.</h3>
 			<ul>
-				<li><a class="menubutton active" href="#about">About me</a></li>
+				<li><a class="menubutton active" href="#welcome">Welcome</a></li>
+				<li><a class="menubutton" href="#about">About</a></li>
 				<li><a class="menubutton" href="#projects">Projects</a></li>
 				<li><a class="menubutton" href="#articles">Articles</a></li>
-				<li><a class="menubutton" href="https://github.com/vurumutu">My GitHub</a></li>
-				<li><a class="menubutton" href="https://linkedin.com/in/wojciech-zgliniecki-1279a1166">My LinkedIn</a></li>
+				<li><a class="menubutton" href="https://github.com/vurumutu" target="_blank">GitHub</a></li>
+				<li><a class="menubutton" href="https://linkedin.com/in/wojciech-zgliniecki-1279a1166" target="_blank">LinkedIn</a></li>
 			</ul>
+			<button class="btn-mode-toggle">Dark/Light-Mode</button>
 	 		<script src="js/active_button.js"></script>
+	 		<script src="js/modes.js"></script>
 	</nav>
 	<div class="content">
+		<section id="welcome" class="anchor welcome">
+			<img src = "images/photo.png" alt="My photo."/>
+			<h1>Wojciech Zgliniecki - Automatics and robotics student, beginner economist, ML enthusiast</h1>
+		</section>
 		<section id="about" class="anchor about">	
 			<div class="about-text">
 				<h1>About me</h1>
 				<p>My name is Wojciech Zgliniecki. </br> I am a student of Automatics and Robotics (Master's degree) and Economics (Bachelor of Science), both at Gdańsk University of Technology. </wbr> My interests include mathematics, ecology, economics, foreign languages, music and artificial intelligence.</wbr> I hope that thanks to this site I can share my knowledge and interests with others.</p>
-			</div>
-			<div class="languages">  
-					<h1>Languages:</h1>
-					<p>Polish</p>
-					<div class="skill-bar tooltip">
-						<span class="tooltiptext">Native speaker.</span>
-						<div class="skill-bar-caption skill-bar-filled" style="--width: 100%;">100%</div>
-					</div>
-					<p>English</p>
-					<div class="skill-bar tooltip">
-						<span class="tooltiptext">Lifelong learner. I'm on my way to obtain the ACERT certificate.</span>						
-						<div class="skill-bar-caption skill-bar-filled" style="--width: 80%;">80%</div>
-					</div>
-					<p>German</p>
-					<div class="skill-bar tooltip">
-						<span class="tooltiptext">I studied German for 10 years. Currently it is very rusty.</span>
-						<div class="skill-bar-caption skill-bar-filled" style="--width: 20%;">20%</div>
-					</div>
 			</div>
 			<div class="skills">
 				<h1>Technologies:</h1>
@@ -72,61 +61,58 @@
 				</div>
 			</div>	
 		</section>
-		<section class="wrapper anchor" id="projects">
-			<article class="card">	
-				<img src="images/thumbnails/PKM.jpg" alt="PKM" />
-				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
-				<div class="card_caption">	
-				<a href="projects/pkm.html">
-				<h2>PKM</h2>
-				</a>
-				</div>	
-			</article>
-			<article class="card">	
-				<img src="images/thumbnails/SIMP.jpg" alt="SIMP" />
-				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
-				<div class="card_caption">	
-				<a href="projects/simp.html">
-				<h2>SIMP</h2>
-				</a>
-				</div>	
-			</article>
-			<article class="card">	
-				<img src="images/thumbnails/houses.jpg" alt="Redigg" />
-				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
-				<div class="card_caption">	
-				<a href="projects/pkm.html">
-				<h2>Redigg</h2>
-				</a>
-				</div>	
-			</article>
-			<article class="card">	
-				<img src="images/thumbnails/gameengine.jpg" alt="Game engine" />
-				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
-				<div class="card_caption">	
-				<a href="projects/pkm.html">
-				<h2>Game engine</h2>
-				</a>
-				</div>	
-			</article>
-			<article class="card">	
-				<img src="images/thumbnails/anfis.jpg" alt="Anfis" />
-				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
-				<div class="card_caption">	
-				<a href="projects/pkm.html">
-				<h2>Anfis</h2>
-				</a>
-				</div>	
-			</article>
-			<article class="card">	
-				<img src="images/thumbnails/music.jpg" alt="MPEG-7" />
-				<!-- https://www.pexels.com/photo/path-railroad-rails-straight-1425/ -->
-				<div class="card_caption">	
-				<a href="projects/pkm.html">
-				<h2>MPEG-7</h2>
-				</a>
-				</div>	
-			</article>
+		<section class="anchor" id="projects">
+			<h1>My projects:</h1>
+			<div class="wrapper">
+				<article class="card">	
+					<img src="images/thumbnails/PKM.jpg" alt="PKM" />
+					<div class="card_caption">	
+					<a href="projects/pkm.html">
+					<h2>PKM</h2>
+					</a>
+					</div>	
+				</article>
+				<article class="card">	
+					<img src="images/thumbnails/SIMP.jpg" alt="SIMP" />
+					<div class="card_caption">	
+					<a href="projects/simp.html">
+					<h2>SIMP</h2>
+					</a>
+					</div>	
+				</article>
+				<article class="card">	
+					<img src="images/thumbnails/houses.jpg" alt="Redigg" />
+					<div class="card_caption">	
+					<a href="projects/pkm.html">
+					<h2>Redigg</h2>
+					</a>
+					</div>	
+				</article>
+				<article class="card">	
+					<img src="images/thumbnails/gameengine.jpg" alt="Game engine" />
+					<div class="card_caption">	
+					<a href="projects/pkm.html">
+					<h2>Game engine</h2>
+					</a>
+					</div>	
+				</article>
+				<article class="card">	
+					<img src="images/thumbnails/anfis.jpg" alt="Anfis" />
+					<div class="card_caption">	
+					<a href="projects/pkm.html">
+					<h2>Anfis</h2>
+					</a>
+					</div>	
+				</article>
+				<article class="card">	
+					<img src="images/thumbnails/music.jpg" alt="MPEG-7" />
+					<div class="card_caption">	
+					<a href="projects/pkm.html">
+					<h2>MPEG-7</h2>
+					</a>
+					</div>	
+				</article>
+			</div>
 		</section>
 		<section id="articles" class="anchor">
 			<div class="articles">

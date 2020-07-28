@@ -3,11 +3,105 @@ html, body {
 	background-color: #ffD9B3;
 	scroll-behavior: smooth;
 	line-height:1.6;
+	margin:0;
+	text-color: black;
 } 
+body {
+  --text-color: black;
+  --bkg-color: #ffD9B3;
+}
+body.dark-theme{
+	--text-color: #eee;
+  	--bkg-color: #121212;
+}
+body {
+  background: var(--bkg-color);
+}
+
+h1, h2, h3, h4, h5, h6, p ,a{
+  color: var(--text-color);
+}
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  body.light-theme {
+	--text-color: black;
+	--bkg-color: #ffD9B3;
+  }
+}
 h1, h2, h3, h4, h5, h6{
 	text-align: center;
-	color: black;
 }
-p, a{
-	color: black;
+/* Header stuff */
+.site-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+	position: fixed;
+	width: 100%;
+	background-color: #FFC081;
+	z-index:1000;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.24);
+}
+
+.site-header button {
+}
+
+.site-header h3 {
+	flex:1 1 0;
+}
+
+.site-header img{
+	max-width: 5%;
+	max-height: 5%; 
+	width: auto;
+    height: auto;
+	border-radius: 25%;  
+}
+
+.site-header ul {
+	list-style-type: none;
+	display: flex; 
+	flex-wrap: wrap;    
+	justify-content: space-evenly;
+    align-items: stretch;
+    margin:0;
+	flex:1 1 0;
+}
+
+.site-header ul li {
+	display: flex;
+	flex:1 1 0;
+
+}
+
+.site-header li a {
+	display: flex;
+	text-decoration: none;
+	align-items: flex-end;
+	flex:1 1 0;
+}
+
+.site-header li a.active {
+  background-color: #ffA650;
+  color: white;
+}
+
+.site-header li a:hover:not(.active) {
+  background-color: #ffD9B3;
+  color: white;
+}
+
+/* Added padding for scrolling */
+.anchor { 
+	padding-top: 5%; 
+}
+
+.content{
+	display: flex;
+    flex-direction: column;
 }
