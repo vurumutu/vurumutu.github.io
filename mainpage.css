@@ -150,6 +150,7 @@ section {
 .articles ul{
 	list-style:upper-roman;
 	text-align: center;
+	color: var(--text-color);
 }
 .articles ul li{
 	font-size:40px;

@@ -7,3 +7,24 @@ for (var i = 0; i < btns.length; i++) {
 	this.className += " active";
 	});
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			console.log(id)
+			if (entry.intersectionRatio > 0) {
+				console.log(document.querySelector(`nav li a[href="#${id}"]`).parentElement)
+				document.querySelector(`nav li a[href="#${id}"]`).classList.add('active');
+			} else {
+				document.querySelector(`nav li a[href="#${id}"]`).classList.remove('active');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
+	
+});
