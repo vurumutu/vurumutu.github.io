@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-  background: var(--main-color);
+	background: var(--main-color);
 }
 :root[theme="light-theme"] .light--hidden {
 	display: none;
@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5, h6{
 	box-shadow: 0 3px 5px rgba(0,0,0,0.24);
 }
 
-.site-header button {
+.site-header a {
+    transition: all 1000ms ease-in-out;
 }
 
 .site-header h3 {

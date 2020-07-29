@@ -16,6 +16,9 @@
 	 		<script src="js/active_button.js"></script>
 	</nav>
 	<div class="content anchor">
+			<div class="progress-container">
+    	<div class="progress-bar" id="myBar"></div>
+  	</div>  
 			<code> Definies a code </code>
 			<kbd>Defines keyboard input</kbd>
 			<var>Defines a variable</var>
@@ -24,6 +27,17 @@ is displayed in a fixed-width
 font, and it preserves
 both      spaces and
 line breaks</pre>
-	</div>
+
+<script>
+	// When the user scrolls the page, execute myFunction 
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	  var scrolled = (winScroll / height) * 100;
+	  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 </body>
 </html>
