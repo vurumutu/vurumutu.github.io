@@ -3,10 +3,10 @@
 <head>
 	<title>Vurumutu - homepage</title>
 	<meta charset="UTF-8">
-	<meta name="color-scheme" content="dark light">
+	<meta name="theme" content="dark-theme light-theme">
 	<meta property="og:title" content="Wojciech's Blog">
 	<meta property="og:description" content="My internet blog.">
-	<meta property="og:image" content="http://vurumutu.github.io/images/favicon_io/android-chrome-512x512.png">
+	<meta property="og:image" content="https://vurumutu.github.io/images/favicon_io/android-chrome-512x512.png">
 	<meta property="og:image:secure_url" content="https://vurumutu.github.io/images/favicon_io/android-chrome-512x512.png">
 	<meta property="og:url" content="https://vurumutu.github.io">
 	<meta property="og:type" content="website">
@@ -23,8 +23,6 @@
 				<li><a class="menubutton" href="#about">About</a></li>
 				<li><a class="menubutton" href="#projects">Projects</a></li>
 				<li><a class="menubutton" href="#articles">Articles</a></li>
-				<li><a class="menubutton" href="https://github.com/vurumutu" target="_blank">GitHub</a></li>
-				<li><a class="menubutton" href="https://linkedin.com/in/wojciech-zgliniecki-1279a1166" target="_blank">LinkedIn</a></li>
 			</ul>
 			<!-- Icons by https://tablericons.com/ -->
 			<button class="btn-mode-toggle light--hidden">			
@@ -32,7 +30,7 @@
 			  <path stroke="none" d="M0 0h24v24H0z"/>
 			  <circle cx="12" cy="12" r="4" />
 			  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
-</svg>
+			</svg>
 			</button>
 
 			<button class="btn-mode-toggle dark--hidden">			
@@ -44,14 +42,25 @@
 	 		<script src="js/active_button.js"></script>
 	 		<script src="js/modes.js"></script>
 	</nav>
+	<div class="social-media-bar">
+		<a href="#" class="gmail"><i class="fa fa-gmail"></i>GMAIL</a> 
+		<a href="https://github.com/vurumutu" class="github" target="blank_">GITHUB</a> 
+		<a href="https://linkedin.com/" class="linkedin" target="blank_">LINKEDIN</a>
+	</div>
 	<div class="content">
 		<section id="welcome" class="anchor welcome">
-			<img src = "images/photo.png" alt="My photo."/>
-			<h1>Wojciech Zgliniecki - Automatics and robotics student, beginner economist, ML enthusiast</h1>
+			<div class="profile-card">
+				<p>Wojciech Zgliniecki - Automatics and robotics student, beginner economist, ML enthusiast</p>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+			</div>
 		</section>
 		<section id="about" class="anchor about">	
+			<h1>About me</h1>
 			<div class="about-text">
-				<h1>About me</h1>
+				<figure>
+						<img src = "images/photo.png" alt="My photo."/>
+				</figure>
+				<p>Wojciech Zgliniecki - Automatics and robotics student, beginner economist, ML enthusiast</p>
 				<p>My name is Wojciech Zgliniecki. </br> I am a student of Automatics and Robotics (Master's degree) and Economics (Bachelor of Science), both at Gdańsk University of Technology. </wbr> My interests include mathematics, ecology, economics, foreign languages, music and artificial intelligence.</wbr> I hope that thanks to this site I can share my knowledge and interests with others.</p>
 			</div>
 			<div class="skills">
@@ -84,7 +93,7 @@
 			</div>	
 		</section>
 		<section class="anchor" id="projects">
-			<h1>My projects:</h1>
+			<h1>Projects</h1>
 			<div class="wrapper">
 				<article class="card">	
 					<img src="images/thumbnails/PKM.jpg" alt="PKM" />
@@ -138,7 +147,7 @@
 		</section>
 		<section id="articles" class="anchor">
 			<div class="articles">
-				<h1>Articles that I have written:</h1>
+				<h1>Articles</h1>
 					<ul>
 						<li>
 							<a href="articles/basic_economy_forecasting.html">
