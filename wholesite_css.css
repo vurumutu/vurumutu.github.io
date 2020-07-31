@@ -5,7 +5,7 @@ html, body {
 	margin:0;
 } 
 
-:root[theme="light-theme"]{
+:root[color-scheme="light"]{
 	--font-weight: 500;
 	--text-color: #FFFFFF;
 	--secondary-text-color: #757575;
@@ -15,7 +15,7 @@ html, body {
 	--accent-color: #536DFE;
 	--divider-color: #BDBDBD;
 }
-:root[theme="dark-theme"]{
+:root[color-scheme="dark"]{
 	--font-weight: 300;
 	--text-color: #FFFFFF;
 	--secondary-text-color: #757575;
@@ -30,11 +30,11 @@ body {
 	font-weight: var(--font-weight);
 	background: var(--primary-color);
 }
-:root[theme="light-theme"] .light--hidden {
+:root[color-scheme="light"] .light--hidden {
 	display: none;
 }
 
-:root[theme="dark-theme"] .dark--hidden {
+:root[color-scheme="dark"] .dark--hidden {
 	display: none;
 }
 
@@ -43,20 +43,24 @@ h1, h2, h3, h4, h5, h6, p ,a{
 }
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
-  body {
-	--text-color: white;
-	--main-color: #262626;
-	--secondary-color: #333333;
-	--tertiary-color: #404040;
-	--quaternary-color: #eeeeee;
-  }
-  body.light-theme {
-	--text-color: black;
-	--main-color: #ffD9B3;
-	--secondary-color: #FFC081;
-	--tertiary-color: #ffA650;
-	--quaternary-color: #fff0E0;
-  }
+	--font-weight: 300;
+	--text-color: #FFFFFF;
+	--secondary-text-color: #757575;
+	--dark-primary-color: #455A64;
+	--light-primary-color: #CFD8DC;
+	--primary-color: #607D8B;
+	--accent-color: #03A9F4;
+	--divider-color: #BDBDBD;
+}
+@media (prefers-color-scheme: light) {
+	--font-weight: 500;
+	--text-color: #FFFFFF;
+	--secondary-text-color: #757575;
+	--dark-primary-color: #0097A7;
+	--light-primary-color: #B2EBF2;
+	--primary-color: #00BCD4;
+	--accent-color: #536DFE;
+	--divider-color: #BDBDBD;
 }
 h1, h2, h3, h4, h5, h6{
 	text-align: center;
@@ -135,9 +139,10 @@ h1, h2, h3, h4, h5, h6{
 
 .social-media-bar {
 	position: fixed;
-	top: 50%;
-	width: 20vh;
-	max-height: 50vh;
+	top: 40%;
+	width: auto;
+	min-width: 10vh;
+	min-height: 10vh;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.24);
 }
 
@@ -145,19 +150,13 @@ h1, h2, h3, h4, h5, h6{
 	display: block;
 	text-align: center;
 	padding: 16px;
-	color: white;
+	color: var(--text-color);
+	background: var(--dark-primary-color);
 	font-size: 20px;
 }
 
-
-.github {
-	background: black;
-	color: white;
-}
-
-.linkedin {
-	background: #007bb5;
-	color: white;
+.social-media-bar a:hover {
+	background: var(--accent-color);
 }
 
 .content{

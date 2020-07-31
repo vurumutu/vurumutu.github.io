@@ -1,15 +1,15 @@
 
 const toggleColorMode = e =>{
     if (e.currentTarget.classList.contains("light--hidden")){
-      document.documentElement.setAttribute("theme", "light-theme");
+      document.documentElement.setAttribute("color-scheme", "light");
 
-      localStorage.setItem("theme", "light-theme");
+      localStorage.setItem("color-scheme", "light");
       return;
     }
 
-    document.documentElement.setAttribute("theme", "dark-theme");
+    document.documentElement.setAttribute("color-scheme", "dark");
 
-    localStorage.setItem("theme", "dark-theme");
+    localStorage.setItem("color-scheme", "dark");
 };
 
 const toggleColorButtons = document.querySelectorAll(".btn-mode-toggle")
