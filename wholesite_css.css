@@ -7,12 +7,12 @@ html, body {
 
 :root[theme="light-theme"]{
 	--font-weight: 500;
-	--text-color: #212121;
+	--text-color: #FFFFFF;
 	--secondary-text-color: #757575;
-	--dark-primary-color: #689F38;
-	--light-primary-color: #DCEDC8;
-	--primary-color: #8BC34A;
-	--accent-color: #009688;
+	--dark-primary-color: #0097A7;
+	--light-primary-color: #B2EBF2;
+	--primary-color: #00BCD4;
+	--accent-color: #7C4DFF;
 	--divider-color: #BDBDBD;
 }
 :root[theme="dark-theme"]{
@@ -140,6 +140,7 @@ h1, h2, h3, h4, h5, h6{
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+	box-shadow: 0 3px 5px rgba(0,0,0,0.24);
 }
 
 .social-media-bar a {
