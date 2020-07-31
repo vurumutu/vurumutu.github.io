@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6, p ,a{
 }
 h1, h2, h3, h4, h5, h6{
 	text-align: center;
+	font-size: 2.7vh;
 }
 /* Header stuff */
 .site-header {
@@ -81,18 +82,12 @@ h1, h2, h3, h4, h5, h6{
 
 .site-header a {
     transition: all 1000ms ease-in-out;
+   	font-size: 2.7vh;
 }
 
 .site-header h3 {
 	flex:1 1 0;
-}
-
-.site-header img{
-	max-width: 5%;
-	max-height: 5%; 
-	width: auto;
-    height: auto;
-	border-radius: 25%;  
+	font-size: 2.7vh;
 }
 
 .site-header ul {
