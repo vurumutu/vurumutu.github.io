@@ -32,7 +32,6 @@
 			  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
 			</svg>
 			</button>
-
 			<button class="btn-mode-toggle dark--hidden">			
 				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
 					<path stroke="none" d="M0 0h24v24H0z"/>
@@ -43,7 +42,6 @@
 	 		<script src="js/modes.js"></script>
 	</nav>
 	<div class="social-media-bar">
-		<a href="#" class="gmail"><i class="gmail"></i>GMAIL</a> 
 		<a href="https://github.com/vurumutu" class="github" target="blank_">GITHUB</a> 
 		<a href="https://www.linkedin.com/in/wojciech-zgliniecki-1279a1166" class="linkedin" target="blank_">LINKEDIN</a>
 	</div>
@@ -199,17 +197,26 @@
 			</div>
 		</section>
 		<section class="anchor skills" id="skills">	
+			<script src="js/animation.js"></script>
 			<h1>My skillset:</h1>
 			<div class="skills-graph">
         		<span class="graph-y-label">Senior</span>
 				<span class="graph-y-label">Advanced</span>
         		<span class="graph-y-label">Intermediate</span>
         		<span class="graph-y-label">Basic</span>
-				<span class="graph-y-label">Nothing</span>
-				<div class="skill-bar" style="--h: 55%; --n: 2;"> </div>
-				<div class="skill-bar" style="--h: 45%; --n: 3;"> </div>
-				<div class="skill-bar" style="--h: 40%; --n: 4;"> </div>
-				<div class="skill-bar" style="--h: 10%; --n: 5;"> </div>
+				<span class="graph-y-label">Absolute novice</span>
+				<div class="skill-bar" style="--n: 2;">
+					<div class="skill-bar-filled" style="--h: 55%;"></div>
+				</div>
+				<div class="skill-bar" style="--n: 3;">
+					<div class="skill-bar-filled" style="--h: 45%;"></div>
+				</div>
+				<div class="skill-bar" style="--n: 4;">
+					<div class="skill-bar-filled" style="--h: 40%;"></div>
+				 </div>
+				<div class="skill-bar" style="--n: 5;">
+					<div class="skill-bar-filled" style="--h: 10%;"></div>
+				 </div>
 				<span class="graph-x-label"> </span>
 				<span class="graph-x-label">Python</span>
         		<span class="graph-x-label">HTML/CSS</span>

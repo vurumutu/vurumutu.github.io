@@ -12,7 +12,7 @@ html, body {
 	--dark-primary-color: #0097A7;
 	--light-primary-color: #B2EBF2;
 	--primary-color: #00BCD4;
-	--accent-color: #7C4DFF;
+	--accent-color: #536DFE;
 	--divider-color: #BDBDBD;
 }
 :root[theme="dark-theme"]{
@@ -136,10 +136,8 @@ h1, h2, h3, h4, h5, h6{
 .social-media-bar {
 	position: fixed;
 	top: 50%;
+	width: 20vh;
 	max-height: 50vh;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
 	box-shadow: 0 3px 5px rgba(0,0,0,0.24);
 }
 
@@ -147,27 +145,19 @@ h1, h2, h3, h4, h5, h6{
 	display: block;
 	text-align: center;
 	padding: 16px;
-	transition: all 0.3s ease;
 	color: white;
 	font-size: 20px;
 }
 
-.social-media-bar a:hover {
-}
 
 .github {
-  background: black;
-  color: white;
-}
-
-.gmail {
-  background: #bb0000;
-  color: white;
+	background: black;
+	color: white;
 }
 
 .linkedin {
-  background: #007bb5;
-  color: white;
+	background: #007bb5;
+	color: white;
 }
 
 .content{
