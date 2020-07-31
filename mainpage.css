@@ -9,6 +9,7 @@ html {
 .content{
 	display: flex;
 	flex-direction: column;
+	align-items: stretch;
 }
 
 section {
@@ -24,9 +25,12 @@ section {
 	margin-left: 10%;
 	margin-top: 2%;
 	display: grid;
+	height: 100%;
     grid-template-columns: repeat(8, 2fr);
-    grid-template-rows: repeat(5, 8vw);
+    grid-template-rows: repeat(5, 20%);
     grid-gap: 15px;
+    justify-content: stretch;
+    align-content: stretch;    
 }
 
 .tile{
@@ -35,6 +39,7 @@ section {
     object-fit: cover;
 	background-color: transparent;
 	perspective: 1000px;
+
 }
 .flipping-box{
 	position: relative;
@@ -135,6 +140,7 @@ section {
     grid-row-start: 2;
     grid-row-end: 4;
    	display: inline;
+   	overflow: hidden;
 }
 
 /* Skills */
