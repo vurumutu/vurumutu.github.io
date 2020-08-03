@@ -10,6 +10,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+	scroll-snap-type: y mandatory;
 }
 
 section {
