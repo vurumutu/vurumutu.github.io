@@ -1,4 +1,3 @@
-// Add active class to the current button (highlight it)
 var btns = document.getElementsByClassName("menubutton");
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function() {
@@ -6,6 +5,10 @@ for (var i = 0; i < btns.length; i++) {
 	current[0].className = current[0].className.replace("active", "");
 	this.className += " active";
 	});
+}
+
+let options = {
+  rootMargin: '-50px 0px -55%'
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,9 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
 				document.querySelector(`nav li a[href="#${id}"]`).classList.remove('active');
 			}
 		});
-	});
+	}, options);
 
-	// Track all sections that have an `id` applied
 	document.querySelectorAll('section[id]').forEach((section) => {
 		observer.observe(section);
 	});

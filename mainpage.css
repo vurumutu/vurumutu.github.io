@@ -13,8 +13,7 @@ html {
 }
 
 section {
-	margin-left:5%;
-	margin-right:5%;
+	margin-right:2%;
 	height: 90vh;
 	box-sizing: content-box;
 	scroll-snap-align: center;
@@ -24,6 +23,7 @@ section {
 /* Welcome - Mosaic*/
 .mosaic{
 	margin-left: 10%;
+	margin-right: 2%;
 	margin-top: 2%;
 	display: grid;
 	height: 100%;
@@ -51,7 +51,6 @@ section {
 	text-align: center;
 	transition: transform 0.8s;
 	transform-style: preserve-3d;
-	box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
 }
 .tile:hover .flipping-box{
 	transform: rotateY(180deg);
@@ -62,6 +61,7 @@ section {
 	height: 100%;
 	-webkit-backface-visibility: hidden;
   	backface-visibility: hidden;
+  	box-shadow: 5px 10px 5px rgba(0,0,0,0.24);
 }
 .front-tile img{
 	width: 100%;
@@ -151,14 +151,19 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	margin-right: 2%;
 }
 
 .skills-graph{
 	margin-left: 10vw;
+	height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 5vw);
-    grid-column-gap: 5vw;
+    grid-template-rows: repeat(6, 13vh);
+	grid-column-gap: 3vw;
+	grid-row-gap: 3vh;
+	margin-left: 5vw;
+	margin-top: 2%;
 }
 
 .skill-bar{
@@ -168,7 +173,7 @@ section {
 	width: 20%;
 	height: 100%;
 	grid-column: var(--n);
-	box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
+	box-shadow: 5px 10px 5px rgba(0,0,0,0.24);
 }
 
 .skill-bar-filled-animation{
@@ -214,6 +219,8 @@ section {
 	grid-column-gap: 3vw;
 	grid-row-gap: 3vh;
 	margin-left: 10vw;
+	margin-top: 2%;
+	margin-right: 2%;
 }
 
 .card{
@@ -222,7 +229,7 @@ section {
     height: 40vh;
     background: var(--dark-primary-color);
 	border-radius: 2px;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
+	box-shadow: 5px 10px 5px rgba(0,0,0,0.24);
 }
 .card_caption{
 	flex-grow: 1;
