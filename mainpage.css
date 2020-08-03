@@ -42,7 +42,6 @@ section {
     object-fit: cover;
 	background-color: transparent;
 	perspective: 1000px;
-
 }
 .flipping-box{
 	position: relative;
@@ -62,7 +61,7 @@ section {
 	height: 100%;
 	-webkit-backface-visibility: hidden;
   	backface-visibility: hidden;
-  	box-shadow: 5px 10px 5px rgba(0,0,0,0.24);
+  	box-shadow: 5px 5px 5px rgba(0,0,0,0.24);
 }
 .front-tile img{
 	width: 100%;
@@ -264,5 +263,6 @@ section {
 
 footer{
 	margin-left: 10vw;
+	text-align: center;
 	align-self: flex-end;
 }

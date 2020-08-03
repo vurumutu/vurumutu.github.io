@@ -17,6 +17,12 @@ window.addEventListener('DOMContentLoaded', () => {
 			const id = entry.target.getAttribute('id');
 			if (entry.intersectionRatio > 0) {
 				document.querySelector(`nav li a[href="#${id}"]`).classList.add('active');
+
+				//Change the hash in the url
+				var hash = window.location.hash;
+			    if(hash.length > 0) {
+					window.location.hash = id;			    
+				}
 			} else {
 				document.querySelector(`nav li a[href="#${id}"]`).classList.remove('active');
 			}
