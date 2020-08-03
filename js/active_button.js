@@ -1,3 +1,4 @@
+// TODO
 var btns = document.getElementsByClassName("menubutton");
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function() {

@@ -3,8 +3,6 @@
   background-image: url("../images/projects/pkm_laboratory.jpg");
   /* Set a specific height */
   height: 100vh;
-  margin-left: 10%;
-  margin-right: 10%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -12,9 +10,22 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallax a{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10vw;
+  background-color: var(--accent-color);
+  font-size: 2.7vh;
+}
 
 @media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
   }
+}
+
+.content-box{
+  height:100vh;
+  background-color: var(--primary-color);
 }

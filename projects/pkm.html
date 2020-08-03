@@ -1,34 +1,73 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="pl-PL" color-scheme="light">
 <head>
 	<title>Projects - PKM</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme" content="dark-theme light-theme">
+	<meta property="og:title" content="PKM Model">
+	<meta property="og:description" content="Description of a PKM train Model.">
+	<meta property="og:image" content="https://vurumutu.github.io/images/favicon_io/android-chrome-512x512.png">
+	<meta property="og:image:secure_url" content="https://vurumutu.github.io/images/favicon_io/android-chrome-512x512.png">
+	<meta property="og:url" content="https://vurumutu.github.io/">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
 	<link rel="stylesheet" type="text/css" href="../wholesite_css.css" />
 	<link rel="stylesheet" type="text/css" href="project.css" />
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon_io/android-chrome-192x192.png">
+	<script src="../js/modes_automatic.js"></script>
 	<style>
 		background-image: url("../images/projects/pkm_laboratory.jpg");
 	</style>
 </head>
 <body>
 	<nav class="site-header">
-		<img src = "../images/photo.png" alt="My photo."/>
-		<h3>Pomorska Kolej Metropolitalna - Makieta</h3>
+		<h3>Wojciech Zgliniecki</h3>
 			<ul>
-				<li><a class="menubutton active" href="../index.html">Back to homepage</a></li>
-				<li><a class="menubutton" href="https://github.com/vurumutu/PKM">GitHub Repo</a></li>
+				<li><a class="menubutton active" href="#welcome">Welcome</a></li>
+				<li><a class="menubutton" href="#skills">Skills</a></li>
+				<li><a class="menubutton" href="../index.html">Homepage</a></li>
 			</ul>
-	 		<script src="js/active_button.js"></script>
+			<button class="btn-mode-toggle light--hidden">			
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			  <path stroke="none" d="M0 0h24v24H0z"/>
+			  <circle cx="12" cy="12" r="4" />
+			  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
+			</svg>
+			</button>
+			<button class="btn-mode-toggle dark--hidden">			
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z"/>
+					<path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" />
+				</svg>
+			</button>
+	 		<script src="../js/active_button.js"></script>
+	 		<script src="../js/modes.js"></script>
 	</nav>
+	<div class="social-media-bar">
+		<a href="https://github.com/vurumutu/PKM" class="github" target="blank_">
+			<img src = "../images/logos/github.svg" alt="GITHUB"/>
+		</a> 
+	</div>
 	<div class="content">
-			<div class="parallax"></div>
-			<div style="height:100vh;background-color:red;font-size:36px">
-			Scroll Up and Down this page to see the parallax scrolling effect.
-			This div is just here to enable scrolling.
-			Tip: Try to remove the background-attachment property to remove the scrolling effect.
+			<div class="parallax">
+				<a href="https://eti.pg.edu.pl/katedra-systemow-decyzyjnych-i-robotyki/aktualnosci/-/asset_publisher/Km3ylDPmIIDZ/content/laboratoria-isa" target="_blank">
+					Image source.
+				</a>
+			</div>
+			<div class= "content-box about">
 			</div>
 			<div class="parallax"></div>
-			<a href="https://eti.pg.edu.pl/katedra-systemow-decyzyjnych-i-robotyki/aktualnosci/-/asset_publisher/Km3ylDPmIIDZ/content/laboratoria-isa">
-			</a>
+			<div class= "content-box technology-stack">
+				<img src = "../images/logos/python.svg" alt="GITHUB"/>
+			</div>
+			<div class="parallax"></div>
+			<div class= "content-box">
+			</div>
+			<div class="parallax"></div>
+			<div class= "content-box">
+			</div>
+			<div class="parallax"></div>
 	</div>
 </body>
 </html>
